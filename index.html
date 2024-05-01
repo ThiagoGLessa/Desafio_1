@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex, nofollow">
+	
+		<link rel="stylesheet" href="Styles/styleIndex.css">
+	
+		<title>Cadastro de estacionamento</title>
+	</head>
+	
+	<body>
+		<header>
+			<section id="container-logo">
+				<img src="Assets/logo-header.png">
+				<span>Apartament's King</span>
+			</section>
+			<nav id="navbar" class="geral-style">
+				<ul>
+					<li><a href="index.html">Cadastro</a></li>
+					<li><a href="reservas.html">Reservas</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="container-content" class="geral-style">
+				<h1>RESERVE SUA VAGA DE ESTACIONAMENTO</h1>
+				<form id="form">
+					<label>Placa do Veículo:</label>
+					<input type="text" minlength="7" maxlength="7" placeholder="Digite aqui a placa do veículo" name="vehiclePlate" required >
+					
+					<label>Nome do Proprietário:</label>
+					<input type="text" placeholder="Digite aqui seu nome" name="ownerName" required >
+					
+					<label>Número do Apartamento:</label>
+					<input type="number" maxlength="3" min="1" max="300" placeholder="Digite aqui o número do AP" name="apartmentNumber" required >
+					
+					<label>Bloco do Apartamento:</label>
+					<input type="text" maxlength="1" placeholder="Digite aqui o bloco do AP" name="apartmentBlock" required >
+					
+					<label>Modelo do Veículo:</label>
+					<input type="text" placeholder="Digite aqui o modelo do veículo" name="vehicleModel" required >
+					
+					<label>Cor do Veículo:</label>
+					<input type="text" placeholder="Digite aqui a cor do veículo" name="vehicleColor" required >
+					
+					<label>Infome a vaga desejada:</label>
+					<select name="parkingSpot" required>
+						<option value="">Informe a vaga desejada</option>
+						<option value="vaga1ba">Vaga 1 - Bloco A</option>
+						<option value="vaga1bb">Vaga 2 - Bloco B</option>
+						<option value="vaga2bc">Vaga 3 - Bloco C</option>
+					</select>
+					<button type="submit" id="form-button">Salvar</button>
+				</form>
+			</section>
+		</main>
+		
+		<script src="Scripts/index.js"></script> <!-- Incluindo o arquivo JavaScript -->
+	</body>
+</html>
